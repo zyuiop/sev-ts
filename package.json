@@ -1,0 +1,28 @@
+{
+  "name": "@zyuiop/sev-ts",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.0.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@types/node": "^22.19.17",
+    "@peculiar/x509": "^1.11.0",
+    "buffer": "^6.0.3",
+    "typescript": "^6.0.3"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "prepublish": "npm run build"
+  }
+}
